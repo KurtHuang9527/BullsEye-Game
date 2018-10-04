@@ -104,9 +104,9 @@ class ViewController: UIViewController {
         updateLables()
         
         let transition = CATransition()
-        transition.type = kCATransitionFade
+        transition.type = CATransitionType.fade
         transition.duration = 1
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         
         view.layer.add(transition, forKey: nil)
     }
